@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class compotarmentoJogador : MonoBehaviour
 {
-    public float aceleracao = 1.0f;
+    [SerializeField] public float aceleracao = 1.0f;
     public float rotacao = 180.0f;
     public float velocidadeMaxima = 10.0f;
     public Rigidbody2D jogadorRb;

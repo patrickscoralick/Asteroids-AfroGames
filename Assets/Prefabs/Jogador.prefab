@@ -116,7 +116,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0031744242, y: 0.050790608}
@@ -144,3 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd5ccd1801ba594c9a4000b6f173724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aceleracao: 3
+  rotacao: 180
+  velocidadeMaxima: 10
+  jogadorRb: {fileID: 9115290055915962812}
