@@ -8,10 +8,22 @@ public class compotarmentoJogador : MonoBehaviour
     public float rotacao = 180.0f;
     public float velocidadeMaxima = 10.0f;
     public Rigidbody2D jogadorRb;
+    public Rigidbody2D prefabProjetil;
+    public float velocidadeProjetil = 3.0f;
+
 
     void Start()
     {
         transform.position = new Vector3 (0.0f, 0.0f, 0.0f);
+    }
+
+    void    Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Rigidbody2D projetil = Instantiate(prefabProjetil, jogadorRb.position, Quaternion.identity);
+            projetil.velocity = -(transform.up * velocidadeProjetil);
+        }
     }
 
     void FixedUpdate()
@@ -36,6 +48,11 @@ public class compotarmentoJogador : MonoBehaviour
         {
             jogadorRb.velocity = Vector2.ClampMagnitude(jogadorRb.velocity, velocidadeMaxima); //Através do Rigidbody controlar a magnitude do objeto
         }
+    }
 
+    void    OnTriggerEnter2D (Collider2D outro)
+    {
+        Destroy(gameObject);
+        Debug.Log("Failed!");
     }
 }

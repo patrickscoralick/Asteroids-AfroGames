@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7092024945948367263}
   - component: {fileID: 7092024945948367260}
   - component: {fileID: 6343542416981826675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidRb: {fileID: 7092024945948367263}
   velocidadeMaxima: 1
+  projetil: {fileID: 8882786282988524315, guid: ae8ce5c152e9e744e90fb3a86b73b31c, type: 3}
 --- !u!82 &6343542416981826675
 AudioSource:
   m_ObjectHideFlags: 0

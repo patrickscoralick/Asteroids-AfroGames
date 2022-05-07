@@ -11,7 +11,9 @@ public class OndasAsteroide : MonoBehaviour
     {
         for (int i = 0; i < quantidadeAsteroides; i++) //Laço de Repetição 'for'(ESTUDEM!!!)
         {
-            Vector3 posicao = new Vector3(0.0f, 0.0f, 0.0f);
+            float   x = Random.Range(-11.0f, 11.0f);
+            float   y = Random.Range(-5.0f, 5.0f);
+            Vector3 posicao = new Vector3(x, y, 0.0f);
             Instantiate(prefabAsteroide, posicao, Quaternion.identity);
         }
     }
