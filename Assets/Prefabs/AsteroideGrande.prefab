@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7092024945948367260}
   - component: {fileID: 6343542416981826675}
   m_Layer: 8
-  m_Name: Asteroide
+  m_Name: AsteroideGrande
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,8 +136,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidRb: {fileID: 7092024945948367263}
+  prefabAsteroideMenor: {fileID: 7092024945948367260, guid: d92b2ec1a2951b54d8d1f85a08e76116, type: 3}
   velocidadeMaxima: 1
   projetil: {fileID: 8882786282988524315, guid: ae8ce5c152e9e744e90fb3a86b73b31c, type: 3}
+  quantidadeFragmentos: 3
 --- !u!82 &6343542416981826675
 AudioSource:
   m_ObjectHideFlags: 0
